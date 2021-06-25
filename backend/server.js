@@ -13,11 +13,11 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "frontend/build")));
-  app.get("*", (request, response) => {
+  app.use("/", (request, response) => {
     response.sendFile(path.join(__dirname, "frontend/build", "index.html"));
   });
 }
-app.use("/", productRoutes);
+// app.use("/", productRoutes);
 app.use("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;
