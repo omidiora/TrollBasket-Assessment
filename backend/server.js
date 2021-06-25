@@ -13,7 +13,7 @@ app.use(express.json());
 //   res.json({ message: "API running..." });
 // });
 if(process.env.NODE_ENV=='production'){
-  app.use(express.static('frontent/buid'))
+  app.use(express.static('frontent/build'))
 }
 
 app.use("/api/products", productRoutes);
