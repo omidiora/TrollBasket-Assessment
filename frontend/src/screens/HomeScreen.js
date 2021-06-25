@@ -41,7 +41,7 @@ console.log(filteredData ,'filteredData');
 
   const getProducts = useSelector((state) => state.getProducts);
 
-  const { products, loading, error } = getProducts;
+  const { products=[], loading, error } = getProducts;
 
   const items = products.filter((data)=>{
     console.log(data,'datame');
