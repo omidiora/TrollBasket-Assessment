@@ -12,7 +12,9 @@
     "server": "nodemon backend/server.js ",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seederScript"
+    "data:import": "node backend/seederScript",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "keywords": [],
   "author": "",

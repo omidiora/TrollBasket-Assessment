@@ -9,9 +9,12 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({ message: "API running..." });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "API running..." });
+// });
+if(process.env.NODE_ENV=='production'){
+  app.use(express.static('frontent/buid'))
+}
 
 app.use("/api/products", productRoutes);
 
