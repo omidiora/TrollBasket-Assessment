@@ -93,7 +93,7 @@ console.log(filteredData ,'filteredData');
         ) : error ? (
           <h2>{error}</h2>
         ) : (
-          products.map((product) => (
+          products[0].map((product) => (
             <Product
               key={product._id}
               name={product.name}
