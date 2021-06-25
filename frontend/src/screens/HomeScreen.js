@@ -59,7 +59,7 @@ console.log(filteredData ,'filteredData');
   return (
     <div className="homescreen">
       <h2 className="homescreen__title"></h2>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className='location'> <LocationOnIcon  color="primary"  id='lagos'/> Lagos <ExpandMoreIcon/> </div>
         <div id='order'><SaveIcon id='purple'/> My Orders</div>
         <div><ShoppingCartIcon id='cart'/>Cart<span id='span'>{getCartCount()}</span></div>  
