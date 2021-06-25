@@ -42,16 +42,17 @@ console.log(filteredData ,'filteredData');
   const getProducts = useSelector((state) => state.getProducts);
 
   const { products=[], loading, error } = getProducts;
+  console.log(products, 'product');
 
-  const items = products.filter((data)=>{
-    console.log(data,'datame');
-    if(filteredData == null)
-        return data
+  // const items = products.filter((data)=>{
+  //   console.log(data,'datame');
+  //   if(filteredData == null)
+  //       return data
 
-    else if(data.name.toLowerCase().includes(filteredData.toLowerCase()) ||data.name.toLowerCase().includes(filteredData.toLowerCase())){
-        return data 
-    } 
-  })
+  //   else if(data.name.toLowerCase().includes(filteredData.toLowerCase()) ||data.name.toLowerCase().includes(filteredData.toLowerCase())){
+  //       return data 
+  //   } 
+  // })
 
   useEffect(() => {
     dispatch(listProducts());
@@ -91,7 +92,7 @@ console.log(filteredData ,'filteredData');
         ) : error ? (
           <h2>{error}</h2>
         ) : (
-          items.map((product) => (
+          products.map((product) => (
             <Product
               key={product._id}
               name={product.name}
