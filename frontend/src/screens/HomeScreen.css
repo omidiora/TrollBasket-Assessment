@@ -1,0 +1,282 @@
+.homescreen {
+  max-width: 1300px;
+  margin: 1rem auto;
+}
+
+.homescreen__title {
+  font-size: 1.5rem;
+  color: #171717;
+  margin-bottom: 1rem;
+  margin-left: 8px;
+}
+
+.homescreen__products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1232px) {
+  .homescreen__products {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (max-width: 950px) {
+  .homescreen__products {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 630px) {
+  .homescreen__products {
+    grid-template-columns: 1fr;
+  }
+}
+
+#leftbox {
+  display: inline-flex;
+}
+#rightbox {
+  display: inline-flex;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  padding: 20px;
+  font-size: 15px;
+  padding-left: 450px;
+  align-items: center;
+  margin-right: 500px;
+}
+.location {
+  display: inline-flex;
+  margin-left: 11px;
+  padding: 80px;
+}
+
+#lagos {
+  font-size: 20px !important;
+  margin-top: 2px;
+}
+#order {
+  display: inline-flex;
+  position: absolute;
+  margin-left: -30px;
+}
+#purple {
+  color: #7e42f5;
+}
+#cart {
+  display: inline-flex;
+  position: absolute;
+  margin-left: -30px;
+}
+
+#span {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4px;
+  color: white;
+  width: 16px;
+  height: 16px;
+  left: 300px;
+  top: 92px;
+  background: #ee6f44;
+  border-radius: 26px;
+}
+.input {
+  height: 40px;
+  width: 100%;
+  left: 16px;
+  top: 145px;
+  border-radius: 4px;
+  padding: 18px;
+  margin-bottom: 50px;
+}
+#search {
+  margin-left: 1270px;
+  color: gray;
+  position: absolute;
+  margin-top: 10px;
+}
+.imagebackground {
+  width: 100%;
+  height: 39px;
+  background: #003277;
+  padding: 80px;
+  align-items: center;
+  text-align: left;
+}
+.h3 {
+  color: white;
+  width: 30%;
+  height: 36px;
+  left: 24px;
+  top: 42px;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  left: 800px;
+  /* or 150% */
+  display: inline-block;
+  justify-content: center;
+  margin-left: 100px;
+  margin-bottom: 800px;
+
+  color: #ffffff;
+}
+#button {
+  position: absolute;
+  padding: 19px 90px 26px 50px;
+  width: 8px;
+  height: 11px;
+  left: 603px;
+  top: 45px;
+  background: #227eff;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 300px;
+  margin-left: 190px;
+}
+
+.imageicon {
+  left: 12.5%;
+  right: 12.5%;
+  top: 8.33%;
+  bottom: 8.33%;
+  width: 40px;
+
+  /* Primary/light_3 */
+
+  background: #e9f2ff;
+}
+
+.recomendation {
+  display: flex;
+}
+
+.recomendation > div {
+  margin: 10px;
+  padding: 500px;
+  font-size: 14px;
+  /* width: 150px; */
+  padding: 110px;
+  justify-content: center;
+}
+
+#icon {
+  width: 59px;
+  height: 48px;
+  left: 110px;
+  top: 357px;
+  color: white;
+  background: #ee6f44;
+  border-radius: 4px;
+}
+
+#icon2 {
+  width: 59px;
+  height: 48px;
+  left: 110px;
+  top: 357px;
+  color: white;
+  /* Orange/Main */
+  background: #7e42f5;
+  border-radius: 4px;
+}
+
+#icon3 {
+  width: 59px;
+  height: 48px;
+  left: 110px;
+  top: 357px;
+  color: white;
+  background: #05944f;
+  border-radius: 4px;
+}
+
+#icon4 {
+  left: 12.5%;
+  right: 12.5%;
+  top: 8.33%;
+  bottom: 8.33%;
+  background: gray;
+  width: 48px;
+  height: 48px;
+  left: 26px;
+  top: 357px;
+  color: white;
+
+  /* Primary/main */
+
+  background: #227eff;
+  border-radius: 4px;
+}
+
+@media (max-width: 630px) {
+  .flex-container > div {
+    padding: 20px;
+    font-size: 15px;
+    padding-left: 80px;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .imagebackground {
+    width: 100%;
+    height: 13px;
+    left: 0px;
+    top: 0px;
+    background: #003277;
+    padding: 30px;
+    display: flex;
+    align-items: left;
+  }
+  .h3 {
+    color: white;
+    width: 30%;
+    height: 36px;
+    left: 24px;
+    top: 42px;
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    left: 800px;
+    /* or 150% */
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 80px;
+
+    color: #ffffff;
+  }
+  #button {
+    position: absolute;
+    padding: 12px 90px 16px 20px;
+    width: 20px;
+    height: 31px;
+    left: 143px;
+    top: 65px;
+    background: #227eff;
+    border-radius: 4px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 245px;
+  }
+
+  .recomendation > div {
+    margin: 10px;
+    font-size: 14px;
+    padding: 10px;
+    justify-content: center;
+  }
+}
